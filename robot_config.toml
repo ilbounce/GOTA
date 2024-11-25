@@ -1,0 +1,6 @@
+MARKET = "BINANCE" # BINANCE or BYBIT
+API_KEY = "xxxxxxxxxxxxxx"
+SECRET = "xxxxxxxxxxxxxxx"
+DELTA = 0.5 # minimal arbitrage delta in percent
+LOT = 100 # order size in usdt
+FEE = 0.1 # your personal fee rate in percent

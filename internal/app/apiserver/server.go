@@ -113,6 +113,10 @@ func (s *server) handleUpdateRobot() http.HandlerFunc {
 			return
 		}
 
+		if !s.botIsRunning {
+			s.raiseError(w, http.StatusBadRequest, fmt.Errorf("robot is not running"))
+		}
+
 		if req.Market != s.bot.Public.Name() || req.API_KEY != s.bot.Private.GetKey() || req.Secret != s.bot.Private.GetSecret() {
 			s.raiseError(w, http.StatusBadRequest, fmt.Errorf("you can update either delta, lot or fee"))
 		}

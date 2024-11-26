@@ -1,2 +1,5 @@
 *.py
-execs/*
+execs/run_arbitrage_robot
+execs/start
+execs/stop
+execs/update

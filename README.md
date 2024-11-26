@@ -1,4 +1,4 @@
-## Golang Triangle Arbitrage
+## Golang Triangular Arbitrage
 
 ### Binance and ByBit are available. Specify your exchange credentials, your personal fee, desirable order size in USDT and minimal arbitrage delta (%) in 'robot_config.toml'.
 
